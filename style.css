@@ -181,6 +181,10 @@ select {
   padding: 10px;
 }
 
+p {
+  text-align: justify;
+}
+
 .header {
   text-align: center;
 }
@@ -200,10 +204,6 @@ select {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* .child_flex:first-child {
-    margin-right: 20px;
-  } */
-
 .title {
   text-align: center;
   margin: 0px;
@@ -216,6 +216,7 @@ select {
   margin: 10px;
   padding: 10px;
   color: #576cbc;
+  text-align: justify;
 }
 
 .container_list {
@@ -225,6 +226,13 @@ select {
   padding-left: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin: 5px;
+}
+.container_list_code {
+  border: 1px solid #576cbc;
+  border-radius: 15px;
+  color: #576cbc;
+  padding: 5px;
   margin: 5px;
 }
 
@@ -258,4 +266,12 @@ select {
 #Buttons {
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer {
+  position: relative;
+  background-color: black;
+  opacity: 0.5;
+  padding: 10px;
+  text-align: center;
 }
