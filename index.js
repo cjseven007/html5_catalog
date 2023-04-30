@@ -27,6 +27,7 @@ function ButtonClick(boxName) {
       const textColour = box[j].style.color;
       const originalColour = "rgb(87, 108, 188)";
       const changedColour = "orange";
+
       if (borderColour === originalColour && textColour === originalColour) {
         box[j].style.borderColor = changedColour;
         box[j].style.color = changedColour;
@@ -37,11 +38,29 @@ function ButtonClick(boxName) {
     }
   };
 }
+// function ButtonColour() {
+//   return function () {
+//     const buttonBorder = myButton.style.borderColor;
+//     if (buttonBorder == "rgb(87, 108, 188)") {
+//       myButton.style.borderColor = "orange";
+//       myButton.style.color = "orange";
+//     } else {
+//       myButton.style.borderColor = "rgb(87, 108, 188)";
+//       myButton.style.color = "rgb(87, 108, 188)";
+//     }
+//   };
+// }
 
 var ButtonDictionary = [
-  { buttonText: "H1 Tag", assignedBox: "box1" },
-  { buttonText: "H2 - H6", assignedBox: "box2" },
+  { buttonText: "<h1>", assignedBox: "box1" },
+  { buttonText: "<h2> - <h6>", assignedBox: "box2" },
+  { buttonText: "<p>", assignedBox: "box3" },
+  { buttonText: "<ul>", assignedBox: "box4" },
+  { buttonText: "<li>", assignedBox: "box5" },
 ];
+
+//
+//Begin
 const myDiv = document.getElementById("Buttons");
 
 for (let i = 0; i < ButtonDictionary.length; i++) {
@@ -50,14 +69,31 @@ for (let i = 0; i < ButtonDictionary.length; i++) {
   myButton.style.borderRadius = "15px";
   myButton.style.padding = "10px";
   myButton.style.marginLeft = "10px";
+  myButton.style.marginBottom = "10px";
   myButton.style.backgroundColor = "rgb(11,36,71)";
   myButton.style.color = "rgb(87, 108, 188)";
   myButton.style.borderColor = "rgb(87, 108, 188)";
+  myButton.style.flex = "1 0 25%";
+  //execute function onclick
+  ButtonClick(ButtonDictionary[i]["assignedBox"])();
 
-  myButton.addEventListener(
-    "click",
-    ButtonClick(ButtonDictionary[i]["assignedBox"])
-  );
+  //   myButton.onclick = ButtonColour();
+  myButton.onclick = ButtonClick(ButtonDictionary[i]["assignedBox"]);
+
+  //   myButton.addEventListener(
+  //     "click",
+  //     ButtonClick(ButtonDictionary[i]["assignedBox"])
+  //   );
+  myButton.addEventListener("click", () => {
+    const buttonBorder = myButton.style.borderColor;
+    if (buttonBorder == "rgb(87, 108, 188)") {
+      myButton.style.borderColor = "orange";
+      myButton.style.color = "orange";
+    } else {
+      myButton.style.borderColor = "rgb(87, 108, 188)";
+      myButton.style.color = "rgb(87, 108, 188)";
+    }
+  });
 
   myDiv.appendChild(myButton);
 }

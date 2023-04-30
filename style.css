@@ -181,7 +181,7 @@ select {
   padding: 10px;
 }
 
-#header {
+.header {
   text-align: center;
 }
 
@@ -194,8 +194,8 @@ select {
   flex: 1;
   /* border: 1px solid #a5d7e8; */
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   background-color: #0b2447;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
@@ -218,6 +218,16 @@ select {
   color: #576cbc;
 }
 
+.container_list {
+  border: 1px solid #576cbc;
+  border-radius: 15px;
+  color: #576cbc;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+
 .container_row {
   display: flex;
   align-items: first baseline;
@@ -238,4 +248,14 @@ select {
   margin: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.buttonTitle {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#Buttons {
+  display: flex;
+  flex-wrap: wrap;
 }

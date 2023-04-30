@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="body">
-    <header id="header"><h1>HTML5 Catalog</h1></header>
+    <header class="header"><h1>HTML5 Catalog</h1></header>
     <div class="parent_flex">
       <!-- First Child Box : Contains the code -->
       <div class="child_flex">
@@ -20,8 +20,17 @@
           &lt;h5&gt;H5&lt;/h5&gt;<br />
           &lt;h6&gt;H6&lt;/h6&gt;
         </div>
-        <div class="container">
+        <div class="box3 container">
           &lt;p&gt;This tag is used to generate a paragraph.&lt;p&gt;
+        </div>
+        <div class="box4 container">
+          &lt;ul&gt;Main List <br />
+          <div class="box5 container_list">
+            &lt;li&gt;This is a list&lt;/li&gt; <br />
+            &lt;li&gt;This is a list&lt;/li&gt; <br />
+            &lt;li&gt;This is a list&lt;/li&gt; <br />
+          </div>
+          &lt;/ul&gt;
         </div>
       </div>
 
@@ -36,12 +45,23 @@
           <h5>H5</h5>
           <h6>H6</h6>
         </div>
-        <p class="container">This tag is used to generate a paragraph.</p>
+        <p class="box3 container">This tag is used to generate a paragraph.</p>
+        <div class="box4 container">
+          <ul class="list_item">
+            Main List
+            <div class="box5 container_list">
+              <li class="list_item">This is a list</li>
+              <li class="list_item">This is a list</li>
+              <li class="list_item">This is a list</li>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- <button id="btn">
       <p>H1 Tag</p>
     </button> -->
+    <h2 class="buttonTitle">Buttons</h2>
     <div id="Buttons"></div>
     <script src="index.js" async defer></script>
   </body>
