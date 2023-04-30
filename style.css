@@ -217,7 +217,7 @@ p {
 
 .container {
   border: 1px solid var(--custom-background-color);
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 10px;
   padding: 10px;
   color: #576cbc;
@@ -227,7 +227,7 @@ p {
 .container_code {
   background-color: #101027;
   border: 1px solid var(--custom-background-color);
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 10px;
   padding: 10px;
   color: #576cbc;
@@ -237,7 +237,7 @@ p {
 
 .container_list {
   border: 1px solid var(--custom-background-color);
-  border-radius: 15px;
+  border-radius: 10px;
   color: #576cbc;
   padding-left: 25px;
   padding-top: 5px;
@@ -246,7 +246,7 @@ p {
 }
 .container_list_code {
   border: 1px solid var(--custom-background-color);
-  border-radius: 15px;
+  border-radius: 10px;
   color: #576cbc;
   padding: 5px;
   margin: 5px;
@@ -257,8 +257,8 @@ p {
   align-items: first baseline;
   justify-content: space-between;
   border: 1px solid var(--custom-background-color);
-  color: #576cbc;
-  border-radius: 15px;
+
+  border-radius: 10px;
   margin: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -268,7 +268,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #576cbc;
   padding: 0px;
   margin: 10px;
 }
