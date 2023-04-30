@@ -26,13 +26,14 @@ function ButtonClick(boxName) {
       const borderColour = box[j].style.borderColor;
       const textColour = box[j].style.color;
       const originalColour = "rgb(87, 108, 188)";
+      const neworiginalColour = "rgb(11, 36, 71)";
       const changedColour = "orange";
 
-      if (borderColour === originalColour && textColour === originalColour) {
+      if (borderColour === neworiginalColour && textColour === originalColour) {
         box[j].style.borderColor = changedColour;
         box[j].style.color = changedColour;
       } else {
-        box[j].style.borderColor = originalColour;
+        box[j].style.borderColor = neworiginalColour;
         box[j].style.color = originalColour;
       }
     }
@@ -57,6 +58,8 @@ var ButtonDictionary = [
   { buttonText: "<p>", assignedBox: "box3" },
   { buttonText: "<ul>", assignedBox: "box4" },
   { buttonText: "<li>", assignedBox: "box5" },
+  { buttonText: "<img>", assignedBox: "box6" },
+  { buttonText: "<a>", assignedBox: "box7" },
 ];
 
 //
@@ -74,6 +77,8 @@ for (let i = 0; i < ButtonDictionary.length; i++) {
   myButton.style.color = "rgb(87, 108, 188)";
   myButton.style.borderColor = "rgb(87, 108, 188)";
   myButton.style.flex = "1 0 25%";
+  myButton.style.fontSize = "16px";
+  myButton.style.fontFamily = "Times New Roman";
   //execute function onclick
   ButtonClick(ButtonDictionary[i]["assignedBox"])();
 
